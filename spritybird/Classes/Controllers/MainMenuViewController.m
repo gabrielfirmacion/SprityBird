@@ -8,7 +8,7 @@
 
 #import "MainMenuViewController.h"
 #import "Score.h"
-#import <SkillzSDK-iOS/Skillz.h>
+#import <Skillz/Skillz.h>
 
 
 @interface MainMenuViewController ()

@@ -10,7 +10,7 @@
 #import "SKScrollingNode.h"
 #import "BirdNode.h"
 #import "Score.h"
-#import <SkillzSDK-iOS/Skillz.h>
+#import <Skillz/Skillz.h>
 
 #define BACK_SCROLLING_SPEED .5
 #define FLOOR_SCROLLING_SPEED 3

@@ -61,7 +61,7 @@
 #ifdef DEBUG
     SkillzEnvironment skillzEnv = SkillzSandbox;
 #else
-    SkillzEnvironment skillzEnv = SkillzProduction;
+# SkillzEnvironment skillzEnv = SkillzProduction;
 #endif
     
     // General Skillz initialization

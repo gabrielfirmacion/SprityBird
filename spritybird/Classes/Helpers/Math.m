@@ -7,7 +7,7 @@
 //
 
 #import "Math.h"
-#import <SkillzSDK-iOS/Skillz.h>
+#import <Skillz/Skillz.h>
 
 static unsigned int _seed = 0;
 

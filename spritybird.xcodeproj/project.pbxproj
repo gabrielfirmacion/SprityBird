@@ -39,7 +39,23 @@
 		82C6A09718A6F53400FEBE9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C6A09618A6F53400FEBE9B /* UIKit.framework */; };
 		82C6A0CB18A6FF7400FEBE9B /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C6A0CA18A6FF7400FEBE9B /* SpriteKit.framework */; };
 		82FEEB9418B550BF00AA6C66 /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82FEEB9318B550BF00AA6C66 /* Main-iPad.storyboard */; };
+		C0A669321D809E4B00B48F0D /* Skillz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A669311D809E4B00B48F0D /* Skillz.framework */; };
+		C0A669341D809E8800B48F0D /* Skillz.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0A669311D809E4B00B48F0D /* Skillz.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C0A669351D809E8800B48F0D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C0A669341D809E8800B48F0D /* Skillz.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		10B751CD1AD430CE0082E739 /* btn_tournaments_orange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_tournaments_orange@2x.png"; sourceTree = "<group>"; };
@@ -88,6 +104,7 @@
 		82C6A0E018A79B2400FEBE9B /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		82C6A0E118A79B2400FEBE9B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		82FEEB9318B550BF00AA6C66 /* Main-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-iPad.storyboard"; sourceTree = "<group>"; };
+		C0A669311D809E4B00B48F0D /* Skillz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Skillz.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +112,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0A669321D809E4B00B48F0D /* Skillz.framework in Frameworks */,
 				82C6A0CB18A6FF7400FEBE9B /* SpriteKit.framework in Frameworks */,
 				82C6A09518A6F53400FEBE9B /* CoreGraphics.framework in Frameworks */,
 				82C6A09718A6F53400FEBE9B /* UIKit.framework in Frameworks */,
+				C0A669321D809E4B00B48F0D /* Skillz.framework in Frameworks */,
 				82C6A09318A6F53400FEBE9B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +176,7 @@
 		82C6A09118A6F53400FEBE9B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C0A669311D809E4B00B48F0D /* Skillz.framework */,
 				82C6A0CA18A6FF7400FEBE9B /* SpriteKit.framework */,
 				82C6A09218A6F53400FEBE9B /* Foundation.framework */,
 				82C6A09418A6F53400FEBE9B /* CoreGraphics.framework */,
@@ -263,6 +283,7 @@
 				82C6A08B18A6F53400FEBE9B /* Sources */,
 				82C6A08C18A6F53400FEBE9B /* Frameworks */,
 				82C6A08D18A6F53400FEBE9B /* Resources */,
+				C0A669351D809E8800B48F0D /* Embed Frameworks */,
 				BCF8D52C19D5F832008D062C /* ShellScript */,
 			);
 			buildRules = (
@@ -430,6 +451,8 @@
 					"-lz",
 					"-lsqlite3",
 					"-lxml2",
+					"-weak_framework",
+					PassKit,
 				);
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -469,6 +492,8 @@
 					"-lz",
 					"-lsqlite3",
 					"-lxml2",
+					"-weak_framework",
+					PassKit,
 				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -485,6 +510,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Skillz.framework",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "spritybird/Supporting Files/spritybird-Prefix.pch";
@@ -517,6 +543,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Skillz.framework",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "spritybird/Supporting Files/spritybird-Prefix.pch";
