@@ -24,9 +24,9 @@
     
     // General Skillz initialization
     // Id is given to us by the devportal
-    [[Skillz skillzInstance] initWithGameId:@"777"
+    [[Skillz skillzInstance] initWithGameId:@"2112"
                                 forDelegate:(MainMenuViewController *)self.window.rootViewController
-                            withEnvironment:skillzEnv
+                            withEnvironment:SkillzProduction
                                   allowExit:YES];
     
     return YES;

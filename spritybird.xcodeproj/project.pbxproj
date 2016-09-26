@@ -306,7 +306,8 @@
 				ORGANIZATIONNAME = "Alexis Creuzot";
 				TargetAttributes = {
 					82C6A08E18A6F53400FEBE9B = {
-						DevelopmentTeam = DF8VM75V3Q;
+						DevelopmentTeam = ST3D4JRYHA;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -506,8 +507,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ST3D4JRYHA;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -517,8 +520,10 @@
 				INFOPLIST_FILE = "spritybird/Supporting Files/spritybird-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skillz.examples.spritybird-enterprise";
 				PRODUCT_NAME = spritybird;
-				PROVISIONING_PROFILE = "9D8D269D-A928-405C-AC51-49A8C6450DAD";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -529,8 +534,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ST3D4JRYHA;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -540,8 +547,10 @@
 				INFOPLIST_FILE = "spritybird/Supporting Files/spritybird-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skillz.examples.spritybird-enterprise";
 				PRODUCT_NAME = spritybird;
-				PROVISIONING_PROFILE = "02D30777-8BE4-45D0-82A4-B151DF37B1F9";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
